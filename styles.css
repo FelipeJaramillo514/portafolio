@@ -379,8 +379,8 @@ main {
 }
 
 .project-card.featured .project-media {
-  aspect-ratio: 16 / 10;
-  min-height: 260px;
+  aspect-ratio: 16 / 9.5;
+  min-height: 300px;
 }
 
 .project-card.featured .project-media img {
@@ -823,7 +823,7 @@ main {
   }
 
   .project-card.featured .project-media {
-    min-height: 220px;
+    min-height: 240px;
   }
 }
 
