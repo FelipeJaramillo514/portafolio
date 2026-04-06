@@ -612,6 +612,11 @@ main {
   gap: 14px;
 }
 
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+}
+
 .hint {
   color: var(--muted);
   font-family: "JetBrains Mono", monospace;
@@ -699,6 +704,18 @@ main {
   .section::before {
     right: 4vw;
   }
+
+  .hero-grid {
+    gap: 32px;
+  }
+
+  .projects-grid {
+    gap: 22px;
+  }
+
+  .stack-grid {
+    gap: 18px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -752,6 +769,35 @@ main {
   .project-card.compact .project-media {
     height: 140px;
   }
+
+  .photo-frame {
+    width: min(340px, 86vw);
+  }
+
+  .hero-actions {
+    gap: 10px;
+  }
+
+  .stack-row {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 6px;
+  }
+
+  .stats-card {
+    text-align: left;
+  }
+
+  .timeline {
+    padding-left: 14px;
+  }
+
+  .timeline-item::before {
+    left: -22px;
+  }
+
+  .contact-card {
+    padding: 16px;
+  }
 }
 
 @media (max-width: 520px) {
@@ -769,5 +815,54 @@ main {
 
   .contact-path {
     display: none;
+  }
+
+  .section-header {
+    font-size: 0.8rem;
+  }
+
+  .hero-title {
+    font-size: 2.1rem;
+  }
+
+  .hero-desc,
+  .hero-meta {
+    font-size: 0.9rem;
+  }
+
+  .project-media {
+    height: 170px;
+  }
+
+  .project-card.compact .project-media {
+    height: 130px;
+  }
+
+  .project-body h3,
+  .project-body h4 {
+    font-size: 1.1rem;
+  }
+
+  .contact-info span {
+    width: 70px;
+  }
+}
+
+@media (max-width: 380px) {
+  .topbar {
+    padding: 12px 5vw;
+  }
+
+  .section {
+    padding: 60px 5vw;
+  }
+
+  .chip {
+    font-size: 0.68rem;
+  }
+
+  .btn {
+    width: 100%;
+    justify-content: center;
   }
 }
