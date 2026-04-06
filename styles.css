@@ -342,6 +342,11 @@ main {
   height: 150px;
 }
 
+.project-card.featured .project-media img {
+  object-fit: contain;
+  background: #07131b;
+}
+
 .project-body {
   padding: 20px;
   display: flex;
