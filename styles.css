@@ -353,18 +353,14 @@ main {
 }
 
 .project-media {
-  height: 240px;
+  aspect-ratio: 16 / 9;
   overflow: hidden;
   background: rgba(4, 10, 14, 0.8);
   border-bottom: 1px solid rgba(69, 227, 255, 0.1);
 }
 
-.project-card.compact .project-media {
-  height: 150px;
-}
-
 .project-card.featured .project-media {
-  height: 280px;
+  aspect-ratio: 16 / 9;
 }
 
 .project-card.featured .project-media img {
@@ -420,6 +416,21 @@ main {
 .project-column {
   display: grid;
   gap: 18px;
+}
+
+.project-card.wide {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+}
+
+.project-card.wide .project-media {
+  height: 190px;
+}
+
+.project-card.wide .project-media img {
+  height: 100%;
+  aspect-ratio: auto;
 }
 
 .project-card.compact .project-body {
@@ -782,6 +793,14 @@ main {
   .stack-grid {
     gap: 18px;
   }
+
+  .project-card.wide {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card.wide .project-media {
+    height: 200px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -826,14 +845,6 @@ main {
   .contact-actions {
     flex-direction: column;
     align-items: flex-start;
-  }
-
-  .project-media {
-    height: 190px;
-  }
-
-  .project-card.compact .project-media {
-    height: 140px;
   }
 
   .photo-frame {
@@ -894,14 +905,6 @@ main {
   .hero-desc,
   .hero-meta {
     font-size: 0.9rem;
-  }
-
-  .project-media {
-    height: 170px;
-  }
-
-  .project-card.compact .project-media {
-    height: 130px;
   }
 
   .project-body h3,
