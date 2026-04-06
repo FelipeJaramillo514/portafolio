@@ -1,0 +1,375 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio | Bayron Felipe Jaramillo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-system">PORTFOLIO.SYS</span>
+      <span class="brand-path">~/felipe.jaramillo</span>
+    </div>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav id="main-nav" class="nav">
+      <a href="#proyectos">proyectos</a>
+      <a href="#stack">stack</a>
+      <a href="#sobre-mi">retro_pl</a>
+      <a href="#contacto">contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="section hero" data-index="01">
+      <div class="section-header reveal">
+        <span class="section-label">proceso_001 / INICIO</span>
+        <span class="section-location">Pasto, Nariño - Colombia</span>
+      </div>
+
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <h1 class="hero-title reveal">
+            <span>BAYRON</span>
+            <span class="accent">FELIPE</span>
+            <span>JARAMILLO</span>
+          </h1>
+          <p class="hero-role reveal">// ESTUDIANTE DE INGENIERÍA DE SOFTWARE</p>
+          <p class="hero-desc reveal">
+            Orientación técnica y analítica aplicada a la resolución eficiente de problemas.
+            Comprometido con la mejora continua, el aprendizaje constante y soluciones efectivas
+            y escalables dentro de entornos colaborativos.
+          </p>
+          <p class="hero-meta reveal">UCC Campus Pasto - 4to Semestre - 2025</p>
+          <div class="chip-row reveal">
+            <span class="chip">Python</span>
+            <span class="chip">Java</span>
+            <span class="chip">Django</span>
+            <span class="chip">Unity</span>
+            <span class="chip">Blender</span>
+            <span class="chip">Arduino</span>
+            <span class="chip">HTML/CSS</span>
+            <span class="chip">Git</span>
+          </div>
+          <div class="hero-actions reveal">
+            <a class="btn primary" href="#proyectos">$ ver_proyectos</a>
+            <a class="btn ghost" href="#contacto">$ contactar.sh</a>
+          </div>
+        </div>
+
+        <div class="hero-photo reveal">
+          <div class="photo-frame">
+            <img src="assets/hero.png" alt="Bayron Felipe Jaramillo" />
+            <span class="corner tl"></span>
+            <span class="corner tr"></span>
+            <span class="corner bl"></span>
+            <span class="corner br"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyectos" class="section projects" data-index="02">
+      <div class="section-header reveal">
+        <span class="section-label">proceso_002 / PROYECTOS</span>
+        <span class="section-sub">// TRABAJOS SELECCIONADOS</span>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card featured reveal">
+          <div class="project-media">
+            <img src="assets/gestarte.png" alt="GestARte" />
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="chip">vr / investigación</span>
+            </div>
+            <h3>Realidad Virtual para el Estudio de la Gestación</h3>
+            <p>
+              Aplicación educativa inmersiva implementada en Unity para el estudio de procesos de gestación.
+              Meta Quest 3 / Meta Quest Pro.
+            </p>
+            <div class="project-tools">
+              <span class="chip">Unity</span>
+              <span class="chip">C#</span>
+              <span class="chip">Blender</span>
+              <span class="chip">Meta Quest 3</span>
+            </div>
+            <a class="link" href="#">+ ver proyecto</a>
+          </div>
+        </article>
+
+        <div class="project-column">
+          <article class="project-card compact reveal">
+            <div class="project-media">
+              <img src="assets/medianaranja.png" alt="Media Naranja" />
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="chip">web app</span>
+              </div>
+              <h4>Página Web Floristería</h4>
+              <p>HTML5 - CSS3 - JavaScript - Responsivo</p>
+              <a class="link" href="#">+ ver proyecto</a>
+            </div>
+          </article>
+
+          <article class="project-card compact reveal">
+            <div class="project-media">
+              <img src="assets/circuito.png" alt="Juego de Recorrido" />
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="chip">hardware / arduino</span>
+              </div>
+              <h4>Juego de Recorrido en Circuito</h4>
+              <p>Arduino - C# - Sensores - Electrónica</p>
+              <a class="link" href="#">+ ver proyecto</a>
+            </div>
+          </article>
+
+          <article class="project-card compact reveal">
+            <div class="project-media">
+              <img src="assets/trayectoria.png" alt="Simulación" />
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="chip">data science / python</span>
+              </div>
+              <h4>Simulación de Trayectoria y Cálculo de Fuerza</h4>
+              <p>Cálculo y visualización de trayectorias con NumPy y Matplotlib.</p>
+              <div class="project-tools">
+                <span class="chip">Python</span>
+                <span class="chip">NumPy</span>
+                <span class="chip">Matplotlib</span>
+              </div>
+              <a class="link" href="#">+ ver proyecto</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="stack" class="section stack" data-index="03">
+      <div class="section-header reveal">
+        <span class="section-label">proceso_003 / TECNOLOGÍAS</span>
+        <span class="section-sub">// STACK TÉCNICO</span>
+      </div>
+
+      <div class="stack-grid">
+        <div class="stack-table reveal">
+          <div class="stack-row stack-head">
+            <span>NOMBRE</span>
+            <span>CATEGORÍA</span>
+            <span>ESTADO</span>
+          </div>
+          <div class="stack-row">
+            <span>Python</span>
+            <span>Lenguaje</span>
+            <span class="status">[ACTIVO]</span>
+          </div>
+          <div class="stack-row">
+            <span>Java</span>
+            <span>Lenguaje</span>
+            <span class="status">[ACTIVO]</span>
+          </div>
+          <div class="stack-row">
+            <span>HTML5 / CSS3</span>
+            <span>Desarrollo Web</span>
+            <span class="status">[ACTIVO]</span>
+          </div>
+          <div class="stack-row">
+            <span>Django</span>
+            <span>Framework</span>
+            <span class="status">[ACTIVO]</span>
+          </div>
+          <div class="stack-row">
+            <span>Pandas / NumPy</span>
+            <span>Librerías</span>
+            <span class="status">[ACTIVO]</span>
+          </div>
+          <div class="stack-row">
+            <span>Unity</span>
+            <span>Plataforma / Game Dev</span>
+            <span class="status">[ACTIVO]</span>
+          </div>
+          <div class="stack-row">
+            <span>Blender</span>
+            <span>Modelado 3D</span>
+            <span class="status">[ACTIVO]</span>
+          </div>
+          <div class="stack-row">
+            <span>Git / GitHub</span>
+            <span>Control de Versiones</span>
+            <span class="status">[ACTIVO]</span>
+          </div>
+          <div class="stack-row">
+            <span>Arduino</span>
+            <span>Hardware</span>
+            <span class="status">[ACTIVO]</span>
+          </div>
+        </div>
+
+        <div class="stats-card reveal">
+          <h4>// ESTADÍSTICAS</h4>
+          <div class="stats-list">
+            <div><span>semestre:</span> <strong>5to - UCC</strong></div>
+            <div><span>proyectos:</span> <strong>4+</strong></div>
+            <div><span>exp. laboral:</span> <strong>2017 →</strong></div>
+            <div><span>certificados:</span> <strong>2 SENA</strong></div>
+            <div><span>estado:</span> <strong class="accent">DISPONIBLE</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre-mi" class="section about" data-index="04">
+      <div class="section-header reveal">
+        <span class="section-label">proceso_004 / SOBRE_MÍ</span>
+        <span class="section-sub">// LÍNEA DE TIEMPO</span>
+      </div>
+
+      <div class="about-grid">
+        <div class="timeline reveal">
+          <div class="timeline-item">
+            <span class="year">2017 - ACTUAL</span>
+            <div class="timeline-content">
+              <h4>Encargado Administrativo y de Operaciones</h4>
+              <p>Licorantes y Variedades Marino - Túquerres, Nariño</p>
+              <p>
+                Gestión de inventarios, facturación electrónica, software de ventas y coordinación con proveedores.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <span class="year">2021</span>
+            <div class="timeline-content">
+              <h4>Bachiller Académico con Formación Tecnológica</h4>
+              <p>Instituto Técnico Industrial - Túquerres, Nariño</p>
+              <p>Formación con énfasis en herramientas tecnológicas y metodológicas.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <span class="year">2021</span>
+            <div class="timeline-content">
+              <h4>Técnico en Contabilización de Operaciones</h4>
+              <p>SENA - Túquerres, Nariño</p>
+              <p>Formación Profesional Integral en operaciones comerciales y financieras.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <span class="year">2022</span>
+            <div class="timeline-content">
+              <h4>Etapas del Desarrollo de Software - SENA</h4>
+              <p>40 horas - Implementación de soluciones</p>
+              <p>Certificación en aplicación de etapas del desarrollo de software.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <span class="year">2024 - 2025</span>
+            <div class="timeline-content">
+              <h4>Ingeniería de Software - UCC</h4>
+              <p>Universidad Cooperativa de Colombia - Campus Pasto</p>
+              <p>7o semestre. Proyectos de investigación en realidad virtual e interfaces educativas.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-side">
+          <div class="manifesto-card reveal">
+            <h4>// MANIFIESTO</h4>
+            <p>
+              Creo que el buen software no se construye solo con líneas de código; se construye con pensamiento
+              analítico, disciplina y la capacidad de traducir problemas en soluciones. Cada proyecto es una
+              oportunidad de mejorar y crear.
+            </p>
+            <blockquote>
+              “Enfocado en aportar soluciones efectivas y escalables dentro de entornos colaborativos y orientados a
+              resultados.”
+              <span>— Bayron Felipe Jaramillo Guareño</span>
+            </blockquote>
+            <div class="manifesto-meta">
+              <span>DIRECCIÓN Y ESTADO: Pasto</span>
+              <span>DISPONIBLE | REMOTO</span>
+            </div>
+          </div>
+
+          <div class="interests-card reveal">
+            <h4>// INTERESES</h4>
+            <div class="chip-row">
+              <span class="chip">Análisis de Datos</span>
+              <span class="chip">Tecnología</span>
+              <span class="chip">Automatización</span>
+              <span class="chip">Música</span>
+              <span class="chip">Lectura</span>
+              <span class="chip">Aprendizaje continuo</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="section contact" data-index="05">
+      <div class="section-header reveal">
+        <span class="section-label">proceso_005 / CONTACTO</span>
+        <span class="section-sub">// ENVIAR COMUNICACIÓN</span>
+      </div>
+
+      <div class="contact-card reveal">
+        <div class="contact-header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="contact-path">contacto@felipe-jaramillo.sh</span>
+        </div>
+        <form class="contact-form">
+          <label>
+            <span>-> enviar_para</span>
+            <input type="email" value="felipejaramillo092@gmail.com" />
+          </label>
+          <label>
+            <span>-> asunto</span>
+            <input type="text" placeholder="Escribe el asunto aquí..." />
+          </label>
+          <label>
+            <span>-> mensaje</span>
+            <textarea rows="5" placeholder="Escribe tu mensaje aquí..."></textarea>
+          </label>
+          <div class="contact-actions">
+            <button type="button" class="btn primary">$ ./enviar.sh</button>
+            <span class="hint">o escríbeme directamente</span>
+          </div>
+        </form>
+
+        <div class="contact-info">
+          <div><span>correo</span> felipejaramillo092@gmail.com</div>
+          <div><span>teléfono</span> 3209568971</div>
+          <div><span>linkedin</span> /in/felipejaramillo-933a839b</div>
+          <div><span>ubicación</span> Pasto, Nariño - Colombia</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      © 2025 Bayron Felipe Jaramillo Guareño | Ingeniería de Software - UCC Pasto
+    </div>
+    <div class="footer-links">
+      GitHub / LinkedIn / CV.pdf
+    </div>
+    <div class="footer-status">ESTADO: DISPONIBLE</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
