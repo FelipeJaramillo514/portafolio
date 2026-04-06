@@ -22,18 +22,19 @@
       <span></span>
     </button>
     <nav id="main-nav" class="nav">
-      <a href="#proyectos">proyectos</a>
-      <a href="#stack">stack</a>
-      <a href="#sobre-mi">retro_pl</a>
-      <a href="#contacto">contacto</a>
+      <a href="#proyectos" data-en="projects">proyectos</a>
+      <a href="#stack" data-en="stack">stack</a>
+      <a href="#sobre-mi" data-en="about_me">retro_pl</a>
+      <a href="#contacto" data-en="contact">contacto</a>
+      <button class="lang-toggle" type="button" aria-label="Cambiar idioma">ES</button>
     </nav>
   </header>
 
   <main>
     <section id="inicio" class="section hero" data-index="01">
       <div class="section-header reveal">
-        <span class="section-label">proceso_001 / INICIO</span>
-        <span class="section-location">Pasto, Nariño - Colombia</span>
+        <span class="section-label" data-en="process_001 / START">proceso_001 / INICIO</span>
+        <span class="section-location" data-en="Pasto, Nariño - Colombia">Pasto, Nariño - Colombia</span>
       </div>
 
       <div class="hero-grid">
@@ -43,13 +44,13 @@
             <span class="accent">FELIPE</span>
             <span>JARAMILLO</span>
           </h1>
-          <p class="hero-role reveal">// ESTUDIANTE DE INGENIERÍA DE SOFTWARE</p>
-          <p class="hero-desc reveal">
+          <p class="hero-role reveal" data-en="// SOFTWARE ENGINEERING STUDENT">// ESTUDIANTE DE INGENIERÍA DE SOFTWARE</p>
+          <p class="hero-desc reveal" data-en="Technical and analytical orientation applied to efficient problem solving. Committed to continuous improvement, constant learning, and effective scalable solutions within collaborative environments.">
             Orientación técnica y analítica aplicada a la resolución eficiente de problemas.
             Comprometido con la mejora continua, el aprendizaje constante y soluciones efectivas
             y escalables dentro de entornos colaborativos.
           </p>
-          <p class="hero-meta reveal">UCC Campus Pasto - 4to Semestre - 2025</p>
+          <p class="hero-meta reveal" data-en="UCC Campus Pasto - 4th Semester - 2025">UCC Campus Pasto - 4to Semestre - 2025</p>
           <div class="chip-row reveal">
             <span class="chip">Python</span>
             <span class="chip">Java</span>
@@ -61,8 +62,8 @@
             <span class="chip">Git</span>
           </div>
           <div class="hero-actions reveal">
-            <a class="btn primary" href="#proyectos">$ ver_proyectos</a>
-            <a class="btn ghost" href="#contacto">$ contactar.sh</a>
+            <a class="btn primary" href="#proyectos" data-en="$ view_projects">$ ver_proyectos</a>
+            <a class="btn ghost" href="#contacto" data-en="$ contact.sh">$ contactar.sh</a>
           </div>
         </div>
 
@@ -80,8 +81,8 @@
 
     <section id="proyectos" class="section projects" data-index="02">
       <div class="section-header reveal">
-        <span class="section-label">proceso_002 / PROYECTOS</span>
-        <span class="section-sub">// TRABAJOS SELECCIONADOS</span>
+        <span class="section-label" data-en="process_002 / PROJECTS">proceso_002 / PROYECTOS</span>
+        <span class="section-sub" data-en="// SELECTED WORKS">// TRABAJOS SELECCIONADOS</span>
       </div>
 
       <div class="projects-grid">
@@ -91,10 +92,10 @@
           </div>
           <div class="project-body">
             <div class="project-tags">
-              <span class="chip">vr / investigación</span>
+              <span class="chip" data-en="vr / research">vr / investigación</span>
             </div>
-            <h3>Realidad Virtual para el Estudio de la Gestación</h3>
-            <p>
+            <h3 data-en="Virtual Reality for the Study of Gestation">Realidad Virtual para el Estudio de la Gestación</h3>
+            <p data-en="Immersive educational application implemented in Unity for the study of gestation processes. Meta Quest 3 / Meta Quest Pro.">
               Aplicación educativa inmersiva implementada en Unity para el estudio de procesos de gestación.
               Meta Quest 3 / Meta Quest Pro.
             </p>
@@ -104,7 +105,7 @@
               <span class="chip">Blender</span>
               <span class="chip">Meta Quest 3</span>
             </div>
-            <a class="link" href="#">+ ver proyecto</a>
+            <a class="link" href="#" data-en="+ view project">+ ver proyecto</a>
           </div>
         </article>
 
@@ -115,11 +116,11 @@
             </div>
             <div class="project-body">
               <div class="project-tags">
-                <span class="chip">web app</span>
+                <span class="chip" data-en="web app">web app</span>
               </div>
-              <h4>Página Web Floristería</h4>
-              <p>HTML5 - CSS3 - JavaScript - Responsivo</p>
-              <a class="link" href="https://naranjaweb.vercel.app/" target="_blank" rel="noopener">+ ver proyecto</a>
+              <h4 data-en="Flower Shop Website">Página Web Floristería</h4>
+              <p data-en="HTML5 - CSS3 - JavaScript - Responsive">HTML5 - CSS3 - JavaScript - Responsivo</p>
+              <a class="link" href="https://naranjaweb.vercel.app/" target="_blank" rel="noopener" data-en="+ view project">+ ver proyecto</a>
             </div>
           </article>
 
@@ -129,11 +130,11 @@
             </div>
             <div class="project-body">
               <div class="project-tags">
-                <span class="chip">hardware / arduino</span>
+                <span class="chip" data-en="hardware / arduino">hardware / arduino</span>
               </div>
-              <h4>Juego de Recorrido en Circuito</h4>
-              <p>Arduino - C# - Sensores - Electrónica</p>
-              <a class="link" href="#">+ ver proyecto</a>
+              <h4 data-en="Circuit Path Game">Juego de Recorrido en Circuito</h4>
+              <p data-en="Arduino - C# - Sensors - Electronics">Arduino - C# - Sensores - Electrónica</p>
+              <a class="link" href="#" data-en="+ view project">+ ver proyecto</a>
             </div>
           </article>
         </div>
@@ -144,16 +145,16 @@
           </div>
           <div class="project-body">
             <div class="project-tags">
-              <span class="chip">data science / python</span>
+              <span class="chip" data-en="data science / python">data science / python</span>
             </div>
-            <h4>Simulación de Trayectoria y Cálculo de Fuerza</h4>
-            <p>Cálculo y visualización de trayectorias con NumPy y Matplotlib.</p>
+            <h4 data-en="Trajectory Simulation and Force Calculation">Simulación de Trayectoria y Cálculo de Fuerza</h4>
+            <p data-en="Calculation and visualization of trajectories with NumPy and Matplotlib.">Cálculo y visualización de trayectorias con NumPy y Matplotlib.</p>
             <div class="project-tools">
               <span class="chip">Python</span>
               <span class="chip">NumPy</span>
               <span class="chip">Matplotlib</span>
             </div>
-            <a class="link" href="#">+ ver proyecto</a>
+            <a class="link" href="#" data-en="+ view project">+ ver proyecto</a>
           </div>
         </article>
       </div>
@@ -161,72 +162,72 @@
 
     <section id="stack" class="section stack" data-index="03">
       <div class="section-header reveal">
-        <span class="section-label">proceso_003 / TECNOLOGÍAS</span>
-        <span class="section-sub">// STACK TÉCNICO</span>
+        <span class="section-label" data-en="process_003 / TECHNOLOGIES">proceso_003 / TECNOLOGÍAS</span>
+        <span class="section-sub" data-en="// TECH STACK">// STACK TÉCNICO</span>
       </div>
 
       <div class="stack-grid">
         <div class="stack-table reveal">
           <div class="stack-row stack-head">
-            <span>NOMBRE</span>
-            <span>CATEGORÍA</span>
-            <span>ESTADO</span>
+            <span data-en="NAME">NOMBRE</span>
+            <span data-en="CATEGORY">CATEGORÍA</span>
+            <span data-en="STATUS">ESTADO</span>
           </div>
           <div class="stack-row">
             <span>Python</span>
-            <span>Lenguaje</span>
-            <span class="status">[ACTIVO]</span>
+            <span data-en="Language">Lenguaje</span>
+            <span class="status" data-en="[ACTIVE]">[ACTIVO]</span>
           </div>
           <div class="stack-row">
             <span>Java</span>
-            <span>Lenguaje</span>
-            <span class="status">[ACTIVO]</span>
+            <span data-en="Language">Lenguaje</span>
+            <span class="status" data-en="[ACTIVE]">[ACTIVO]</span>
           </div>
           <div class="stack-row">
             <span>HTML5 / CSS3</span>
-            <span>Desarrollo Web</span>
-            <span class="status">[ACTIVO]</span>
+            <span data-en="Web Development">Desarrollo Web</span>
+            <span class="status" data-en="[ACTIVE]">[ACTIVO]</span>
           </div>
           <div class="stack-row">
             <span>Django</span>
-            <span>Framework</span>
-            <span class="status">[ACTIVO]</span>
+            <span data-en="Framework">Framework</span>
+            <span class="status" data-en="[ACTIVE]">[ACTIVO]</span>
           </div>
           <div class="stack-row">
             <span>Pandas / NumPy</span>
-            <span>Librerías</span>
-            <span class="status">[ACTIVO]</span>
+            <span data-en="Libraries">Librerías</span>
+            <span class="status" data-en="[ACTIVE]">[ACTIVO]</span>
           </div>
           <div class="stack-row">
             <span>Unity</span>
-            <span>Plataforma / Game Dev</span>
-            <span class="status">[ACTIVO]</span>
+            <span data-en="Platform / Game Dev">Plataforma / Game Dev</span>
+            <span class="status" data-en="[ACTIVE]">[ACTIVO]</span>
           </div>
           <div class="stack-row">
             <span>Blender</span>
-            <span>Modelado 3D</span>
-            <span class="status">[ACTIVO]</span>
+            <span data-en="3D Modeling">Modelado 3D</span>
+            <span class="status" data-en="[ACTIVE]">[ACTIVO]</span>
           </div>
           <div class="stack-row">
             <span>Git / GitHub</span>
-            <span>Control de Versiones</span>
-            <span class="status">[ACTIVO]</span>
+            <span data-en="Version Control">Control de Versiones</span>
+            <span class="status" data-en="[ACTIVE]">[ACTIVO]</span>
           </div>
           <div class="stack-row">
             <span>Arduino</span>
-            <span>Hardware</span>
-            <span class="status">[ACTIVO]</span>
+            <span data-en="Hardware">Hardware</span>
+            <span class="status" data-en="[ACTIVE]">[ACTIVO]</span>
           </div>
         </div>
 
         <div class="stats-card reveal">
-          <h4>// ESTADÍSTICAS</h4>
+          <h4 data-en="// STATS">// ESTADÍSTICAS</h4>
           <div class="stats-list">
-            <div><span>semestre:</span> <strong>5to - UCC</strong></div>
-            <div><span>proyectos:</span> <strong>4+</strong></div>
-            <div><span>exp. laboral:</span> <strong>2017 →</strong></div>
-            <div><span>certificados:</span> <strong>2 SENA</strong></div>
-            <div><span>estado:</span> <strong class="accent">DISPONIBLE</strong></div>
+            <div><span data-en="semester:">semestre:</span> <strong data-en="5th - UCC">5to - UCC</strong></div>
+            <div><span data-en="projects:">proyectos:</span> <strong data-en="4+">4+</strong></div>
+            <div><span data-en="work exp.:">exp. laboral:</span> <strong data-en="2017 →">2017 →</strong></div>
+            <div><span data-en="certificates:">certificados:</span> <strong data-en="2 SENA">2 SENA</strong></div>
+            <div><span data-en="status:">estado:</span> <strong class="accent" data-en="AVAILABLE">DISPONIBLE</strong></div>
           </div>
         </div>
       </div>
@@ -234,18 +235,18 @@
 
     <section id="sobre-mi" class="section about" data-index="04">
       <div class="section-header reveal">
-        <span class="section-label">proceso_004 / SOBRE_MÍ</span>
-        <span class="section-sub">// LÍNEA DE TIEMPO</span>
+        <span class="section-label" data-en="process_004 / ABOUT_ME">proceso_004 / SOBRE_MÍ</span>
+        <span class="section-sub" data-en="// TIMELINE">// LÍNEA DE TIEMPO</span>
       </div>
 
       <div class="about-grid">
         <div class="timeline reveal">
           <div class="timeline-item">
-            <span class="year">2017 - ACTUAL</span>
+            <span class="year" data-en="2017 - PRESENT">2017 - ACTUAL</span>
             <div class="timeline-content">
-              <h4>Encargado Administrativo y de Operaciones</h4>
-              <p>Licorantes y Variedades Marino - Túquerres, Nariño</p>
-              <p>
+              <h4 data-en="Administrative and Operations Manager">Encargado Administrativo y de Operaciones</h4>
+              <p data-en="Licorantes y Variedades Marino - Túquerres, Nariño">Licorantes y Variedades Marino - Túquerres, Nariño</p>
+              <p data-en="Inventory management, electronic invoicing, sales software, and supplier coordination.">
                 Gestión de inventarios, facturación electrónica, software de ventas y coordinación con proveedores.
               </p>
             </div>
@@ -253,65 +254,65 @@
           <div class="timeline-item">
             <span class="year">2021</span>
             <div class="timeline-content">
-              <h4>Bachiller Académico con Formación Tecnológica</h4>
-              <p>Instituto Técnico Industrial - Túquerres, Nariño</p>
-              <p>Formación con énfasis en herramientas tecnológicas y metodológicas.</p>
+              <h4 data-en="Academic High School with Technological Training">Bachiller Académico con Formación Tecnológica</h4>
+              <p data-en="Instituto Técnico Industrial - Túquerres, Nariño">Instituto Técnico Industrial - Túquerres, Nariño</p>
+              <p data-en="Training with emphasis on technological and methodological tools.">Formación con énfasis en herramientas tecnológicas y metodológicas.</p>
             </div>
           </div>
           <div class="timeline-item">
             <span class="year">2021</span>
             <div class="timeline-content">
-              <h4>Técnico en Contabilización de Operaciones</h4>
-              <p>SENA - Túquerres, Nariño</p>
-              <p>Formación Profesional Integral en operaciones comerciales y financieras.</p>
+              <h4 data-en="Technician in Operations Accounting">Técnico en Contabilización de Operaciones</h4>
+              <p data-en="SENA - Túquerres, Nariño">SENA - Túquerres, Nariño</p>
+              <p data-en="Comprehensive professional training in commercial and financial operations.">Formación Profesional Integral en operaciones comerciales y financieras.</p>
             </div>
           </div>
           <div class="timeline-item">
             <span class="year">2022</span>
             <div class="timeline-content">
-              <h4>Etapas del Desarrollo de Software - SENA</h4>
-              <p>40 horas - Implementación de soluciones</p>
-              <p>Certificación en aplicación de etapas del desarrollo de software.</p>
+              <h4 data-en="Software Development Stages - SENA">Etapas del Desarrollo de Software - SENA</h4>
+              <p data-en="40 hours - Solution implementation">40 horas - Implementación de soluciones</p>
+              <p data-en="Certification in applying software development stages.">Certificación en aplicación de etapas del desarrollo de software.</p>
             </div>
           </div>
           <div class="timeline-item">
             <span class="year">2024 - 2025</span>
             <div class="timeline-content">
-              <h4>Ingeniería de Software - UCC</h4>
-              <p>Universidad Cooperativa de Colombia - Campus Pasto</p>
-              <p>7o semestre. Proyectos de investigación en realidad virtual e interfaces educativas.</p>
+              <h4 data-en="Software Engineering - UCC">Ingeniería de Software - UCC</h4>
+              <p data-en="Universidad Cooperativa de Colombia - Campus Pasto">Universidad Cooperativa de Colombia - Campus Pasto</p>
+              <p data-en="7th semester. Research projects in virtual reality and educational interfaces.">7o semestre. Proyectos de investigación en realidad virtual e interfaces educativas.</p>
             </div>
           </div>
         </div>
 
         <div class="about-side">
           <div class="manifesto-card reveal">
-            <h4>// MANIFIESTO</h4>
-            <p>
+            <h4 data-en="// MANIFESTO">// MANIFIESTO</h4>
+            <p data-en="I believe good software is not built only with lines of code; it is built with analytical thinking, discipline, and the ability to translate problems into solutions. Each project is an opportunity to improve and create.">
               Creo que el buen software no se construye solo con líneas de código; se construye con pensamiento
               analítico, disciplina y la capacidad de traducir problemas en soluciones. Cada proyecto es una
               oportunidad de mejorar y crear.
             </p>
             <blockquote>
-              “Enfocado en aportar soluciones efectivas y escalables dentro de entornos colaborativos y orientados a
-              resultados.”
+              <span class="quote-text" data-en="“Focused on delivering effective and scalable solutions within collaborative, results-oriented environments.”">“Enfocado en aportar soluciones efectivas y escalables dentro de entornos colaborativos y orientados a
+              resultados.”</span>
               <span>— Bayron Felipe Jaramillo Guareño</span>
             </blockquote>
             <div class="manifesto-meta">
-              <span>DIRECCIÓN Y ESTADO: Pasto</span>
-              <span>DISPONIBLE | REMOTO</span>
+              <span data-en="LOCATION & STATUS: Pasto">DIRECCIÓN Y ESTADO: Pasto</span>
+              <span data-en="AVAILABLE | REMOTE">DISPONIBLE | REMOTO</span>
             </div>
           </div>
 
           <div class="interests-card reveal">
-            <h4>// INTERESES</h4>
+            <h4 data-en="// INTERESTS">// INTERESES</h4>
             <div class="chip-row">
-              <span class="chip">Análisis de Datos</span>
-              <span class="chip">Tecnología</span>
-              <span class="chip">Automatización</span>
-              <span class="chip">Música</span>
-              <span class="chip">Lectura</span>
-              <span class="chip">Aprendizaje continuo</span>
+              <span class="chip" data-en="Data Analysis">Análisis de Datos</span>
+              <span class="chip" data-en="Technology">Tecnología</span>
+              <span class="chip" data-en="Automation">Automatización</span>
+              <span class="chip" data-en="Music">Música</span>
+              <span class="chip" data-en="Reading">Lectura</span>
+              <span class="chip" data-en="Continuous Learning">Aprendizaje continuo</span>
             </div>
           </div>
         </div>
@@ -320,8 +321,8 @@
 
     <section id="contacto" class="section contact" data-index="05">
       <div class="section-header reveal">
-        <span class="section-label">proceso_005 / CONTACTO</span>
-        <span class="section-sub">// ENVIAR COMUNICACIÓN</span>
+        <span class="section-label" data-en="process_005 / CONTACT">proceso_005 / CONTACTO</span>
+        <span class="section-sub" data-en="// SEND MESSAGE">// ENVIAR COMUNICACIÓN</span>
       </div>
 
       <div class="contact-card reveal">
@@ -333,41 +334,41 @@
         </div>
         <form class="contact-form">
           <label>
-            <span>-> enviar_para</span>
+            <span data-en="-> send_to">-> enviar_para</span>
             <input type="email" value="felipejaramillo092@gmail.com" />
           </label>
           <label>
-            <span>-> asunto</span>
-            <input type="text" placeholder="Escribe el asunto aquí..." />
+            <span data-en="-> subject">-> asunto</span>
+            <input type="text" placeholder="Escribe el asunto aquí..." data-en-placeholder="Write the subject here..." />
           </label>
           <label>
-            <span>-> mensaje</span>
-            <textarea rows="5" placeholder="Escribe tu mensaje aquí..."></textarea>
+            <span data-en="-> message">-> mensaje</span>
+            <textarea rows="5" placeholder="Escribe tu mensaje aquí..." data-en-placeholder="Write your message here..."></textarea>
           </label>
           <div class="contact-actions">
-            <button type="button" class="btn primary">$ ./enviar.sh</button>
-            <span class="hint">o escríbeme directamente</span>
+            <button type="button" class="btn primary" data-en="$ ./send.sh">$ ./enviar.sh</button>
+            <span class="hint" data-en="or write to me directly">o escríbeme directamente</span>
           </div>
         </form>
 
         <div class="contact-info">
-          <div><span>correo</span> <a class="contact-link" href="mailto:felipejaramillo092@gmail.com">felipejaramillo092@gmail.com</a></div>
-          <div><span>teléfono</span> <a class="contact-link" href="https://wa.me/573209586971?text=Hola%20Felipe%2C%20vi%20tu%20portafolio%20y%20quiero%20contactarte." target="_blank" rel="noopener">3209586971</a></div>
-          <div><span>linkedin</span> <a class="contact-link" href="https://linkedin.com/in/bayron-felipe-jaramillo/" target="_blank" rel="noopener">/in/bayron-felipe-jaramillo</a></div>
-          <div><span>ubicación</span> Pasto, Nariño - Colombia</div>
+          <div><span data-en="email">correo</span> <a class="contact-link" href="mailto:felipejaramillo092@gmail.com">felipejaramillo092@gmail.com</a></div>
+          <div><span data-en="phone">teléfono</span> <a class="contact-link" href="https://wa.me/573209586971?text=Hola%20Felipe%2C%20vi%20tu%20portafolio%20y%20quiero%20contactarte." target="_blank" rel="noopener">3209586971</a></div>
+          <div><span data-en="linkedin">linkedin</span> <a class="contact-link" href="https://linkedin.com/in/bayron-felipe-jaramillo/" target="_blank" rel="noopener">/in/bayron-felipe-jaramillo</a></div>
+          <div><span data-en="location">ubicación</span> <span data-en="Pasto, Nariño - Colombia">Pasto, Nariño - Colombia</span></div>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div>
+    <div data-en="© 2025 Bayron Felipe Jaramillo Guareño | Software Engineering - UCC Pasto">
       © 2025 Bayron Felipe Jaramillo Guareño | Ingeniería de Software - UCC Pasto
     </div>
-    <div class="footer-links">
+    <div class="footer-links" data-en="GitHub / LinkedIn / CV.pdf">
       GitHub / LinkedIn / CV.pdf
     </div>
-    <div class="footer-status">ESTADO: DISPONIBLE</div>
+    <div class="footer-status" data-en="STATUS: AVAILABLE">ESTADO: DISPONIBLE</div>
   </footer>
 
   <script src="script.js"></script>
