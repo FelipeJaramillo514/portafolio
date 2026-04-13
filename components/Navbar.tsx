@@ -51,7 +51,7 @@ export default function Navbar() {
             onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
             className="px-2 py-1 font-mono text-[0.68rem] uppercase tracking-[0.08em] text-text bg-[rgba(69,227,255,0.12)] border border-[rgba(69,227,255,0.35)] rounded-full cursor-pointer hover:shadow-lg"
           >
-            {theme === 'dark' ? '☀️' : '🌙'}
+            {theme === 'dark' ? 'Light' : 'Dark'}
           </button>
         </div>
       </nav>
@@ -105,7 +105,7 @@ export default function Navbar() {
               }}
               className="px-2 py-1 font-mono text-[0.68rem] uppercase text-text bg-[rgba(69,227,255,0.12)] border border-[rgba(69,227,255,0.35)] rounded-full cursor-pointer"
             >
-              {theme === 'dark' ? '☀️' : '🌙'}
+              {theme === 'dark' ? 'Light' : 'Dark'}
             </button>
           </div>
         </nav>
@@ -113,3 +113,4 @@ export default function Navbar() {
     </header>
   )
 }
+
