@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-1: #07131b;
+  --bg-2: #0a2230;
+  --bg-3: #07131b;
+  --glow-1: rgba(69, 227, 255, 0.16);
+  --glow-2: rgba(18, 98, 132, 0.2);
+  --glow-3: rgba(8, 40, 58, 0.35);
+  --panel: #0b1a24;
+  --panel-2: #0d2230;
+  --line: rgba(57, 220, 255, 0.35);
+  --accent: #45e3ff;
+  --accent-2: #19b6ff;
+  --text: #e6f3f7;
+  --muted: #9fb7c3;
+  --chip: rgba(9, 30, 44, 0.8);
+  --shadow: rgba(3, 10, 15, 0.6);
+  --topbar: rgba(5, 16, 24, 0.86);
+  --nav-panel: rgba(6, 16, 24, 0.95);
+  --panel-soft: rgba(9, 24, 34, 0.8);
+  --panel-soft-2: rgba(9, 20, 30, 0.7);
+  --panel-soft-3: rgba(8, 20, 30, 0.75);
+  --panel-soft-4: rgba(6, 16, 24, 0.8);
+  --input-bg: rgba(4, 12, 18, 0.9);
+  --section-index: rgba(15, 45, 62, 0.7);
+}
+
+:root[data-theme="light"] {
+  --bg-1: #f6f8fb;
+  --bg-2: #e9f1f7;
+  --bg-3: #ffffff;
+  --glow-1: rgba(0, 122, 160, 0.12);
+  --glow-2: rgba(0, 90, 120, 0.08);
+  --glow-3: rgba(0, 70, 100, 0.06);
+  --panel: #ffffff;
+  --panel-2: #f2f6fa;
+  --line: rgba(10, 86, 110, 0.22);
+  --accent: #0b5872;
+  --accent-2: #0a7a9b;
+  --text: #0a1a24;
+  --muted: #4b5f6a;
+  --chip: rgba(11, 26, 36, 0.06);
+  --shadow: rgba(10, 35, 48, 0.12);
+  --topbar: rgba(252, 254, 255, 0.92);
+  --nav-panel: rgba(252, 254, 255, 0.96);
+  --panel-soft: rgba(255, 255, 255, 0.9);
+  --panel-soft-2: rgba(247, 250, 252, 0.86);
+  --panel-soft-3: rgba(255, 255, 255, 0.88);
+  --panel-soft-4: rgba(255, 255, 255, 0.86);
+  --input-bg: rgba(255, 255, 255, 0.96);
+  --section-index: rgba(8, 20, 28, 0.16);
+}
+
+* {
+  @apply box-border m-0 p-0;
+}
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  background: radial-gradient(1200px 800px at 12% -10%, var(--glow-1), transparent 60%),
+    radial-gradient(900px 600px at 85% 20%, var(--glow-2), transparent 62%),
+    radial-gradient(1000px 700px at 50% 90%, var(--glow-3), transparent 70%),
+    linear-gradient(135deg, var(--bg-1) 0%, var(--bg-2) 45%, var(--bg-3) 100%);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(69, 227, 255, 0.03),
+    rgba(0, 0, 0, 0) 30%
+  );
+  background-size: 100% 6px;
+  mix-blend-mode: screen;
+  opacity: 0.35;
+  z-index: 0;
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(circle at 30% 30%, rgba(69, 227, 255, 0.05), transparent 55%);
+  opacity: 0.6;
+  z-index: 0;
+}
+
+.noise {
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg width='140' height='140' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+  mix-blend-mode: soft-light;
+  z-index: 0;
+}
+
+:root[data-theme="light"] .noise {
+  mix-blend-mode: multiply;
+  opacity: 0.22;
+}
+
+:root[data-theme="light"] body::before {
+  background-image:
+    linear-gradient(to bottom, rgba(10, 86, 110, 0.08), rgba(0, 0, 0, 0) 30%),
+    radial-gradient(circle at 20% 20%, rgba(10, 86, 110, 0.08), transparent 55%),
+    radial-gradient(circle at 80% 10%, rgba(10, 86, 110, 0.06), transparent 60%);
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+@keyframes textFlicker {
+  0%, 18%, 22%, 62%, 64%, 70%, 100% {
+    opacity: 1;
+    text-shadow: 0 0 12px rgba(69, 227, 255, 0.4);
+  }
+  20%, 21%, 63%, 65%, 69% {
+    opacity: 0.6;
+    text-shadow: none;
+  }
+}
+
+@keyframes textGlow {
+  0%, 100% { text-shadow: 0 0 6px rgba(69, 227, 255, 0.2); }
+  50% { text-shadow: 0 0 14px rgba(69, 227, 255, 0.5); }
+}
+
+@keyframes textJitter {
+  0% { transform: translate(0, 0); }
+  10% { transform: translate(0.5px, -0.5px); }
+  20% { transform: translate(-0.5px, 0.5px); }
+  30% { transform: translate(0.8px, 0); }
+  40% { transform: translate(-0.8px, 0.3px); }
+  50% { transform: translate(0, 0); }
+  60% { transform: translate(0.4px, 0.6px); }
+  70% { transform: translate(-0.4px, -0.6px); }
+  80% { transform: translate(0.6px, -0.2px); }
+  90% { transform: translate(-0.6px, 0.2px); }
+  100% { transform: translate(0, 0); }
+}
+
+@keyframes scanPulse {
+  0%, 100% { opacity: 0.85; }
+  50% { opacity: 1; }
+}
+
+@keyframes ghostPulse {
+  0%, 100% { opacity: 0.9; }
+  50% { opacity: 0.6; }
+}
+
+@keyframes titlePulse {
+  0% {
+    transform: scale(1) translateY(0);
+    color: var(--text);
+  }
+  50% {
+    transform: scale(1.08) translateY(-2px);
+    color: var(--accent);
+    text-shadow: 0 0 12px rgba(69, 227, 255, 0.6);
+  }
+  100% {
+    transform: scale(1) translateY(0);
+    color: var(--text);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.is-visible {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero-grid,
+  .projects-grid,
+  .stack-grid,
+  .about-grid,
+  .comments-grid {
+    @apply grid-cols-1;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 520px) {
+  body {
+    font-size: 0.85rem;
+  }
+}
